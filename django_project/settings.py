@@ -25,7 +25,7 @@ SECRET_KEY = '!#&4ux*ff55o-orw-yn0ys_4b@s213-(ub&xy0^lpc#=)%p#%i'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['timezone-pocket-daemon.herokuapp.com']
 
 
 # Application definition
