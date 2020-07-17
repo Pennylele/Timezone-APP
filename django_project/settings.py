@@ -128,3 +128,5 @@ STATIC_URL = '/static/' #This static is looking for the static folder under the 
 # ]
 
 CRISPY_TEMPLATE_PACK = 'bootstrap4'
+
+django_heroku.settings(locals())
