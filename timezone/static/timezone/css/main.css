@@ -1,0 +1,36 @@
+#app_name{
+	padding-top: 0.3em;
+}
+
+
+.form-item__element--select {
+  appearance: none;
+  padding-right: 2em;
+
+  &:invalid {
+    color: gray;
+  }
+
+  [disabled] {
+    color: gray;
+  }
+  
+  option {
+    color: $default-color;
+  }
+}
+
+.alert {
+    positition: relative;
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(0px);
+    transition: visibility 0s, opacity 250ms, transform 250ms;
+}
+.alert.hide {
+    positition: relative;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateX(-10px); // translateX, translateY, translateZ works well
+    transition: visibility 0s 250ms, opacity 250ms, transform 250ms;
+}
