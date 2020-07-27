@@ -61,10 +61,10 @@
 
 <script>
 window.onload = function() {
-	// var t = new Date();
-	// var dt = moment(t).format('YYYY-MM-DD HH:mm')
+	var t = new Date();
+	var dt = moment(t).format('YYYY-MM-DD HH:mm')
 	var d = Intl.DateTimeFormat().resolvedOptions().timeZone;
-	// window.document.getElementById("id_User_Date_Time").value = dt;
+	window.document.getElementById("id_User_Date_Time").value = dt;
 	window.document.getElementById("id_User_Time_Zone").value = d;
 }
 
