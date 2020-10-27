@@ -1,24 +1,22 @@
-// window.onload = function() {
-// 	var d = Intl.DateTimeFormat().resolvedOptions().timeZone;
-// 	var t = new Date();
-// 	// var dt = moment(t).format('YYYY-MM-DD HH:mm')
-// 	// window.document.getElementById("id_User_Date_Time").value = dt;
-// 	window.document.getElementById("id_User_Time_Zone").value = d;
-// }
-
-// const clock = document.getElementById('id_User_Date_Time');
-
-// setInterval(() => {
-//     const now = moment();
-//     const humanReadable = now.format('YYYY-MM-DD HH:mm');
-//     clock.value = humanReadable;
-// }, 60000);
-
-
-
 $('.dropdown-menu button').click(function(){
     $('#selected').text($(this).text());
 });
+
+window.onload = function() {
+	var t = new Date();
+	var dt = moment(t).format('YYYY-MM-DD HH:mm')
+	var d = Intl.DateTimeFormat().resolvedOptions().timeZone;
+	window.document.getElementById("id_User_Date_Time").value = dt;
+	window.document.getElementById("id_User_Time_Zone").value = d;
+}
+
+const clock = document.getElementById('id_User_Date_Time');
+
+setInterval(() => {
+    const now = moment();
+    const humanReadable = now.format('YYYY-MM-DD HH:mm');
+    clock.value = humanReadable;
+}, 60000);
 
 //moment.js
 //! moment.js

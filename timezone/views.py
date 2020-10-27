@@ -1,8 +1,6 @@
 from django.shortcuts import render
 from django.http import HttpResponse
 import datetime, pytz
-from django.utils import timezone
-import requests
 from .forms import DateTimeForm
 import re
 from django.contrib import messages
